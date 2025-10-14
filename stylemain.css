@@ -1,0 +1,357 @@
+@font-face {
+    font-family: mainFont;
+    src: url(src/font/Inter-Var.ttf);
+} 
+@font-face {
+    font-family: mainFontAR;
+    src: url(src/font/SFArabic-Regular.ttf);
+}
+@font-face {
+    font-family: titlefont;
+    src: url(src/font/ChettaVissto.ttf);
+} 
+@font-face {
+    font-family: numfont;
+    src: url(src/font/Dubielplain-1GrZ.ttf);
+} 
+@font-face {
+    font-family: another;
+    src: url(src/font/RonaleClassic-2vM53.otf);
+}
+
+body {
+    font-family: mainFont;
+    color: white;
+    text-align: center;
+    background-color: #161D27;
+    overflow-x: hidden;
+    
+}
+body.arabic {
+    font-family: mainFontAR;
+}
+
+nav, #langSwitcher {
+    justify-self: right;
+    border-radius: 20px;
+    width: 40px;
+    height: 20px;
+    border: none;
+    position: fixed;
+    right: 10px;
+    z-index: 1000;
+    background-color: #b46529;
+    color: white;
+    transition:  0.5s ease all;
+    cursor: pointer;
+
+}
+#langSwitcher:focus {
+    outline: none;
+}
+#langSwitcher:hover {
+    background-color: #161D27; 
+    border: #b46529 2px solid; 
+    color: white;
+}
+
+
+.main1 {
+    color: white;
+    display: flex;
+    height: 630px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url(src/imgs/img-head1.svg);
+    background-position: center;
+    background-size: cover;
+}
+hr{
+    display: none;
+}
+.main1 .main {
+    width: 40%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.main1 h1 {
+    font-family: titlefont;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+.main1 a {
+    text-decoration: none;
+}
+.main1 #location {
+    font-size: small;
+    color: #D1B069;
+}
+.main1 img {
+    width: 230px; 
+    height: 230px;
+}
+
+
+.main2 {
+    display: flex;
+}
+.main2 .imgcont {
+    width: 50%;
+    overflow: hidden;
+}
+.main2 .imgcont #theHammer {
+    width: 1020px;
+    height: 710px;
+    position: relative;
+    right: 380px;
+    bottom: 30px;
+    z-index: 1;
+}
+.main2 .textcont {
+    width: 50%;
+    padding: 30px 25px 20px 40px;   
+}
+.main2 .textcont h2 {
+    font-family: titlefont;
+    font-weight: lighter;
+    font-size: 40px;
+}
+.main2 .textcont button {
+    cursor: pointer;
+    border-style: none;
+    border-radius: 20px;
+    background-color: #b46529;
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+.main2 .textcont button:hover {
+    cursor: pointer;
+    border-style: solid;
+    border-color: #b46529;
+    border-radius: 20px;
+    background-color:#0c1424;
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    color: white;
+}
+.main2 .khatem {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 50px;
+        margin-left: 13px;
+}
+.main2 .khatem img {
+    max-width: 230px; 
+    height: 230px;
+    padding-left: 50px;
+}
+
+
+.main3 .main3content {
+    display: flex;
+    width: 100%;
+    max-height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c1424;
+}
+.main3 .main3-1 {
+    width: 50%;
+}
+.main3 .main3-1 img {
+    width: 250px; 
+    height: 250px;
+}
+.main3 .main3-1 .counter {
+    font-family: numfont;
+    font-size: 80px;
+    transition: all ease;
+}
+.main3 .main3-1 p {
+    font-family: another; 
+    font-size: 20px;
+}
+.main3 .main3-2 {
+    width: 50%;
+}
+.main3 .main3-2 img {
+    width: 250px; 
+    height: 250px;
+}
+.main3 .main3-2 .counter {
+    font-family: numfont;
+    font-size: 80px;
+    transition: all ease;
+}
+.main3 .main3-2 p {
+    font-family: another; 
+    font-size: 20px;
+}
+
+.main4 .contactText h1 {
+    font-family: titlefont;
+    font-weight: lighter;
+    font-size: 80px;
+    margin-bottom: -10px;
+}
+.main4 .contactText p {
+    color: #b46529;
+}
+.main4 .contactInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main4 .contactInfo ul {
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.main4 .contactInfo ul #imgphone {
+    width: 190px; 
+    height: 40px;
+}
+.main4 .contactInfo ul img {
+    width: 40px; 
+    height: 40px; 
+    transition:0.5s ease;
+}
+.main4 .contactInfo ul img:hover {
+    filter: brightness(0) invert(1);
+}
+
+footer {
+    background-color: #b46529;
+    font-size: smaller;
+    height: 50px;
+    padding-top: 5px;
+}
+
+@media (max-width: 1024px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 410px;
+        font-size: 16px;
+    }
+
+    nav{
+        margin-top: 20px;
+    }
+    nav, #langSwitcher{
+        width: 120px;
+        height: 30px;
+    }
+
+    .main1{
+        flex-direction: column;
+        width: 130%;  height: 900px;
+        margin: auto;
+    }
+
+    .main1 img {
+        margin-left: -9px;
+    }
+
+    .main1 h1 {
+        font-size: 35px;
+    }
+
+    .main1 a {
+    text-decoration:dashed;}
+    .main1 #location {
+        color:#D1B069;
+        text-decoration: dashed;
+        font-size: 15px;
+    }
+    
+    hr {
+        display: flex;
+        border: none;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin-left: 120px;
+        margin-bottom: 400px;}
+
+        #hr2 {
+        display: flex;
+        border: none;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin-left: 120px;
+        margin-bottom: 150px;}
+    .main2{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: -200px;
+    }
+    .main2 .textcont{
+        width: 115%;         
+        margin: auto;        
+        overflow-x: hidden;
+    }
+
+    .main2 .textcont h2 {
+        font-size: 35px;
+    }
+
+    .main2 .textcont .khatem{
+        flex-direction: row;
+        gap: 20px;
+        position: relative; 
+        top: -310px;
+        left: 60px;
+        z-index: -1;
+        opacity: 50%;
+    }
+
+    .main2 .imgcont{
+        display: none;
+    }
+
+    .main3 .main3content{
+        flex-direction: column;
+        width: 532px;
+        height: 200px;
+        background-color: #161D27;
+        margin-top: 310px;
+        margin-bottom: 500px;
+    }
+
+    .main4{
+        width: 130%;
+        margin: auto;
+    }
+    .main4 .contactText h1{
+        font-size: 35px;
+    }
+
+    .main4 .contactText p {
+    color: #b46529;
+    font-size: 16px;
+}
+
+    .main4 .contactInfo ul{
+       transform: scale(1.3);
+    }
+
+    footer{
+        width: 130%;
+        margin-top: 30px;
+    }
+}
+
+
