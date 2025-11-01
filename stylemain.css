@@ -181,19 +181,10 @@ hr{
 }
 .main3 .main3-2 {
     width: 50%;
-}
-.main3 .main3-2 img {
-    width: 250px; 
-    height: 250px;
-}
-.main3 .main3-2 .counter {
-    font-family: numfont;
-    font-size: 80px;
-    transition: all ease;
+        padding-right: 50px;
 }
 .main3 .main3-2 p {
-    font-family: another; 
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .main4 .contactText h1 {
@@ -267,14 +258,6 @@ footer {
 
     .main1 h1 {
         font-size: 35px;
-    }
-
-    .main1 a {
-    text-decoration:dashed;}
-    .main1 #location {
-        color:#D1B069;
-        text-decoration: dashed;
-        font-size: 15px;
     }
     
     hr {
